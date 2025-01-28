@@ -420,7 +420,7 @@
                 {
                     //alert(data);
                     console.log(data);
-                    fileContent.innerHTML = data;
+                    fileContent.innerHTML = `<pre>${data}</pre>`;
                 })
                 .catch(error => {
                 // Handle errors
