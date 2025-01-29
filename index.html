@@ -161,7 +161,7 @@
         width: auto;
         margin-top: 0px;
         padding: 16px;
-        color: rgb(75, 75, 75);
+        color: rgb(200, 200, 200);
         font-weight: bold;
         font-size: 18px;
         transition: 0.6s ease;
@@ -288,6 +288,8 @@
     images = [];
     imagePath = "";
     currentFolderIndex = 0;
+    next = document.getElementById('next');
+    prev = document.getElementById('prev');
 
     dots = document.getElementById('Dots');
     //dots.innerHTML = '<span class="dot" value="0"></span>';
@@ -351,11 +353,16 @@
     function fetchImages() 
     {
         //images = [];
+        next.style.display = "none";
+        prev.style.display = "none";
+        
         if (currentImageIndex < imageCounts[currentFolderIndex])
         {   
             imagePath = `folders/${folders[currentFolderIndex]}/${currentImageIndex}.jpg`;
             updateSlideshow();
             ColorDots();
+            next.style.display = "block";
+            prev.style.display = "block";
         }
     }
 
@@ -403,8 +410,7 @@
 
     //slideshow.innerHTML = '<img src="images/folder1/1.jpg">'
 
-    next = document.getElementById('next');
-    prev = document.getElementById('prev');
+    
 
     next.addEventListener('click', () => 
     {
