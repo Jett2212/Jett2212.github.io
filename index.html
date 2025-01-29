@@ -239,11 +239,8 @@
 
     <section id="Section2">
         
-        <p id="TestPara"></p>
 
         <div id="fileContent">File content will appear here...</div>
-
-        <embed src="folders/Intro/info.txt">
 
         <!-- <select id="folderSelect" class="folder"></select> -->
             <!-- Slideshow container -->
@@ -385,6 +382,7 @@
         currentImageIndex = 0;
         fetchImages();
         CreateDots();
+        UpdateText();
     });
 
     
@@ -409,27 +407,32 @@
         
 
         
-        const fileContent = document.getElementById('fileContent');
         
-        fetch('folders/Intro/info.txt')
-            .then(response => {
-                alert("HWLP");
-                return response.text();
-            })
-                .then((data) => 
-                {
-                    //alert(data);
-                    console.log(data);
-                    fileContent.innerHTML = `<pre>${data}</pre>`;
-                })
-                .catch(error => {
-                // Handle errors
-                console.error('Error fetching the file:', error);
-                fileContent.innerHTML = error; //'Failed to load the file.';
-            });
             
 
     });
+
+
+    const fileContent = document.getElementById('fileContent');
+        function UpdateText()
+        {
+            fetch('folders/${folders[currentFolderIndex}/info.txt')
+                .then(response => {
+                    alert("HWLP");
+                    return response.text();
+                })
+                    .then((data) => 
+                    {
+                        //alert(data);
+                        console.log(data);
+                        fileContent.innerHTML = `<pre>${data}</pre>`;
+                    })
+                    .catch(error => {
+                    // Handle errors
+                    console.error('Error fetching the file:', error);
+                    fileContent.innerHTML = error; //'Failed to load the file.';
+                });
+        }
     
     prev.addEventListener('click', () => 
     {
@@ -446,6 +449,7 @@
 
     CreateDots();
     fetchImages();
+    UpdateText();
 
 
     /*
