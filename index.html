@@ -268,7 +268,7 @@
 
     const slideshow = document.getElementById('testslide');
     
-    folders = ["folder1", "folder2", "folder3"];
+    folders = ["Intro", "FinalProject", "ActorPlacetool", "GameJame2025", "UniGroupWork];
     imageCounts = [3, 4, 5];
     currentImageIndex = 0;
     images = [];
@@ -418,7 +418,6 @@
         {
             fetch('folders/${folders[currentFolderIndex}/info.txt')
                 .then(response => {
-                    alert("HWLP");
                     return response.text();
                 })
                     .then((data) => 
