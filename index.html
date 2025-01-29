@@ -417,8 +417,9 @@
     function UpdateText()
     {
         fileContent.innerHTML = '';
-        //fetch(`folders/${folders[currentFolderIndex]}/info.txt`)
-        fetch(`folders/Intro/info.txt`)
+        alert(`Fetching:  folders/${folders[currentFolderIndex]}/info.txt`);
+        fetch(`folders/${folders[currentFolderIndex]}/info.txt`)
+        //fetch(`folders/Intro/info.txt`)
             .then(response => {
                 return response.text();
             })
