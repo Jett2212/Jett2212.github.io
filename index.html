@@ -416,7 +416,7 @@
     const fileContent = document.getElementById('fileContent');
         function UpdateText()
         {
-            fetch('folders/${folders[currentFolderIndex].value}/info.txt')
+            fetch(`folders/${folders[currentFolderIndex].value}/info.txt`)
                 .then(response => {
                     return response.text();
                 })
