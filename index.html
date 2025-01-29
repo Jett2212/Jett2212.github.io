@@ -125,7 +125,10 @@
         background-color: rgb(180, 180, 180, 1);
         }
 
-
+        #fileContent
+        {
+            color:rgb(200,200,200);
+        }
 
         * {box-sizing:border-box}
 
@@ -240,13 +243,14 @@
     <section id="Section2">
         
 
-        <div id="fileContent">File content will appear here...</div>
+        
 
         <!-- <select id="folderSelect" class="folder"></select> -->
             <!-- Slideshow container -->
         <div class="slideshow-container"> 
 
             <select id="folderSelect" class="folder"></select>
+            <div id="fileContent">File content will appear here...</div>
         
         <div class="testslide" id="testslide" ></div>
         
@@ -417,7 +421,7 @@
     function UpdateText()
     {
         fileContent.innerHTML = '';
-        alert(`Fetching:  folders/${folders[currentFolderIndex]}/info.txt`);
+        //alert(`Fetching:  folders/${folders[currentFolderIndex]}/info.txt`);
         fetch(`folders/${folders[currentFolderIndex]}/info.txt`)
         //fetch(`folders/Intro/info.txt`)
             .then(response => {
