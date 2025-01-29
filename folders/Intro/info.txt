@@ -1,7 +1,5 @@
-Hello this is a test for writing onto a page
-second line
+Hello welcome to my portfolio page. 
+I am Luke Jackson, an aspiring Technical Artist / Game Programmer passionate about games, art and technology.
+I have experience working at Codemasters on EA Sports WRC as a Technical Artist Intern, where I created tools and workflows for many teams.
 
-space between 3
-
-
-	- tab formatting???              10 space?
+Use the dropdown to explore some of my more recent projects. My CV, LinkedIn, and Github are also linked at the top. 
