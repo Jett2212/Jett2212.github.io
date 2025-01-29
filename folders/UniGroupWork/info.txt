@@ -1,7 +1,9 @@
-Hello this is a test for writing onto a page
-second line
+As part of a university module, I was asked to work in a group to make an engaging game.
+As a group we decided to make a space puzzle game.
 
-space between 3
+I was involved in making a system allowing the user to flip and change their gravity.
+I also made a pressure plate interaction system and designed the final level.
 
-
-	- tab formatting???              10 space?
+As part of the team, I had the role of lead programmer. 
+This involved me being in charge of source control. Advising and helping on many of the systems created. 
+And assisting with any technical problems or issues that arose.

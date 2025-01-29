@@ -1,7 +1,9 @@
-Hello this is a test for writing onto a page
-second line
+This is what I am doing for my final project. 
+It is still a work in progress.
+My idea is an artificial intelligence / machine learning based mesh generation system.
+At the time of writing this, I have a semi successful version.
+I have made a Feedforward Neural Network (FNN) as it seemed the easiest one to start with.
+I first created it working solely with the CPU and working in Unreal. 
+Once created and tested, I then implemented it using CUDA to run on the graphics card to speed it up.
 
-space between 3
-
-
-	- tab formatting???              10 space?
+Future work on this may involve creating a graph neural network (GNN) or a Generative Adversarial Networks (GAN)

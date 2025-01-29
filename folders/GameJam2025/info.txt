@@ -1,7 +1,5 @@
-Hello this is a test for writing onto a page
-second line
-
-space between 3
-
-
-	- tab formatting???              10 space?
+This project was for the Global Game Jam 2025.
+The theme was "Bubbles". As a team we decided to make an underwater survival game.
+The gameplay loop was to go outside of your safe bubble to collect resources and food.
+Resources could then be used to upgrade the oxygen tank, bubble size and the shelter size.
+I was involved in the map/ level design, the water movement and water/ bubble postprocessing, and the upgrading systems.

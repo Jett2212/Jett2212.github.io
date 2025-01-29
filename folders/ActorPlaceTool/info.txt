@@ -1,0 +1,14 @@
+For this tool, I wanted to be able to place actors in an area randomly.
+I wanted to be able to seed the randomisation. 
+After using the Unreal seeded randomiser, I decided to try making my own
+as the unreal one did not work as I wanted it to, often by creating a pattern in the placement.
+
+I first adapted the method used by unreal, by changing some numbers and adding some additional behaviour.
+I also tried a method of "simulating" a line bouncing within a box and using the first method to generate points on the line.
+Another method I experimented with was using a chaos machine to generate numbers.
+
+Using these methods, I made a tool to visualise a box, and where the actors would be placed.
+The tool interface has options to choose which randomisation method to use, actor count, seed and minimum distance between actors.
+
+As part of this project, I also started to look into perlin noise for landscape / mesh generation. And into other uses for procedural meshes such as creating shapes along a spline.
+
