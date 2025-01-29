@@ -414,24 +414,26 @@
 
 
     const fileContent = document.getElementById('fileContent');
-        function UpdateText()
-        {
-            fetch(`folders/${folders[currentFolderIndex].value}/info.txt`)
-                .then(response => {
-                    return response.text();
+    function UpdateText()
+    {
+        fileContent.innerHTML = '';
+        //fetch(`folders/${folders[currentFolderIndex]}/info.txt`)
+        fetch(`folders/Intro/info.txt`)
+            .then(response => {
+                return response.text();
+            })
+                .then((data) => 
+                {
+                    //alert(data);
+                    console.log(data);
+                    fileContent.innerHTML = `<pre>${data}</pre>`;
                 })
-                    .then((data) => 
-                    {
-                        //alert(data);
-                        console.log(data);
-                        fileContent.innerHTML = `<pre>${data}</pre>`;
-                    })
-                    .catch(error => {
-                    // Handle errors
-                    console.error('Error fetching the file:', error);
-                    fileContent.innerHTML = error; //'Failed to load the file.';
-                });
-        }
+                .catch(error => {
+                // Handle errors
+                console.error('Error fetching the file:', error);
+                fileContent.innerHTML = error; //'Failed to load the file.';
+            });
+    }
     
     prev.addEventListener('click', () => 
     {
